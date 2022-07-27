@@ -30,8 +30,9 @@ a {
     font-family: var(--primaryFont);
     font-weight: normal;
     color: var(--textColor);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5rem;
+    text-decoration: none;
   }
 
   h4 {
@@ -118,17 +119,17 @@ a {
     cursor: pointer;
   }
 
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-  }
-
-nav ul li:hover, nav ul li[data-state="selected"] {
-  text-decoration: underline;
+.nav-btn:hover, .nav-btn:hover[data-state="selected"] {
+  color: var(--primaryColor);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
+.nav-btn:selected, .nav-btn:selected[data-state="selected"] {
+  color: var(--primaryColor);
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 /* HERO */
 
@@ -182,6 +183,7 @@ nav ul li:hover, nav ul li[data-state="selected"] {
   padding: 0.5rem 3rem;
   border-radius: 0.5rem;
   font-size: 1.125rem;
+  text-decoration: none;
   border-style: none;
   cursor: pointer;
   transition: var(--motion-2);
@@ -197,7 +199,7 @@ button:active {
 }
 
 #hero-img {
-  background-image: url('../images/ABC_WIRES_Hero_img.png');
+  background-image: url('../images/ABC_Hero_mockup.png');
   width: 140%;
   height: 100%;
   background-size: contain;
@@ -248,7 +250,7 @@ main {
   border-radius: 1rem 1rem 0 0;
 }
 
-a .secondary-button {
+.secondary-button {
   background-color: white;
   color: var(--primaryColor);
   padding: 0.5rem 3rem;
