@@ -45,7 +45,7 @@ a {
   }
 
   body > * {
-    max-width: var(--max-width);
+    max-width: 1440px;
   }
 
   :root {
@@ -434,7 +434,7 @@ nav #burger {
   display: none;} 
 
 #hero {
-  height: 50vh;
+  height: 80vh;
   padding: 24px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -498,6 +498,6 @@ footer {
 main {
   padding: 24px;
   }
-
+}
 
 /* scriptcity */
