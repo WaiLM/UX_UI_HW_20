@@ -63,6 +63,7 @@ a {
 
     --ln: 1px solid #C4C4C4;
     --main-margin: 4rem;
+    --mobile-margin: 2rem
     --max-width: 1440px;
 
     --primaryFont: Lato, Poppins, Helvetica, sans-serif;
@@ -414,13 +415,13 @@ footer .body {
 
 /* media queries */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 760px) {
 
 #WaiBrand {
-  left: 16px;}
+  left: 24px;}
 
 nav {
-  padding: 1rem 16px;
+  padding: 1rem 24px;
 }  
 
 .navLinks a {
@@ -433,8 +434,8 @@ nav #burger {
   display: none;} 
 
 #hero {
-  height: 60vh;
-  padding: 16px;
+  height: 50vh;
+  padding: 24px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: var(--background);}
@@ -445,11 +446,17 @@ nav #burger {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 2rem;}
+  gap: 1.7rem;}
+
+  #Hello {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
 
 #hero .right {
   grid-column: span 12;
-  transform: translateY(-10rem);}
+  transform: translateY(-12rem);}
+  
 #hero-img {
   width: 100%;
   height: 250%;
@@ -458,28 +465,39 @@ nav #burger {
   background-position: 50% 50%;}
   
 .section-header {
-  padding-left: 16px;}
+  padding: 24px;}
+
 .card {
-    grid-column: span 12;}
-#left-about-me {
-    grid-column: span 12;}
-#right-about-me {
-    grid-column: span 12;}
-.about-me-section .skills {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;}
+  grid-column: span 12;}
+
+#about-me-section {
+  padding: 36px 24px;
+}  
+#about-me-section .skills {
+  padding-top: 1rem;
+}
+
 .tools {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;}
+  padding-top: 1rem;
+}
+
+#left-about-me {
+  grid-column: span 12;
+}
+
+#right-about-me {
+  grid-column: span 12;
+  gap: 4rem;}
+
 .contact-list {
   grid-column: span 12;}
+
 footer {  
-  padding: 16px;}
-.about-me-section {
-  padding: 16px;}
-main {  
-  padding: 16px;}
-}
+  padding: 36px 24px;}
+
+main {
+  padding: 24px;
+  }
 
 
 /* scriptcity */
