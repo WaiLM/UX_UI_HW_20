@@ -378,13 +378,11 @@ footer #contact {
   color: white;
 }
 
-#brand-logo {
-  position:absolute;
-  left: var(--main-margin);
-  top: 1rem;
+#brand-footer {
   height: 72px;
   width: 15%;
   min-width: 150px;
+  color: 0 0 0 0.5;
 }
 
 /*#contact-logos {
