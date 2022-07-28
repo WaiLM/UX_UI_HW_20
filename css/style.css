@@ -233,6 +233,7 @@ main {
 .card {
   grid-column: span 6;
   min-height: 600px;
+  min-width: 400px;
   box-shadow: 0px 0px 6px #C4C4C4;
   border-radius: 1.5rem;
   display:flex;
@@ -377,6 +378,15 @@ footer #contact {
   color: white;
 }
 
+#brand-logo {
+  position:absolute;
+  left: var(--main-margin);
+  top: 1rem;
+  height: 72px;
+  width: 15%;
+  min-width: 150px;
+}
+
 /*#contact-logos {
   background-image: url(../images/contact_logos.png);
   background-image: cover;
@@ -398,12 +408,30 @@ i {
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding 24px;
   background-color: var(--clr-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  z-index: 200;
+}
+
+#close-btn {
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  color: var(--background);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 16px;
+  right: 46px;
+}
+
+#close-btn:hover {
+  color: var(--primaryColor);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #modal-menu.hidden {
