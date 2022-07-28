@@ -406,7 +406,7 @@ i {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding 24px;
+  padding: 24px;
   background-color: var(--clr-primary);
   display: flex;
   flex-direction: column;
