@@ -241,6 +241,13 @@ main {
   justify-content: space-between;
   padding: 24px;
 }
+
+.card:hover {
+  box-shadow: 0px 2px 6px #C4C4C4;
+  transform: scale(1.03);
+  transition: 300ms;
+}
+
 .card-copy {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
@@ -376,6 +383,12 @@ footer .body {
   background-image: cover;
   background-repeat: no-repeat;
   height: 3rem;
+}
+
+i {
+  background-color: #e8e5e5;
+  height: 100;
+  width: 100;
 }
 
 /* MODAL */
