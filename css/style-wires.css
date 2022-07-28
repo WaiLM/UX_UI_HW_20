@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--primaryFont);
+  color: var(--textColor);
+  font-size: 80px;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  color: var(--textColor);
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: var(--primaryFont);
+  font-weight: normal;
+  color: var(--textColor);
+  font-size: 1.8rem;
+  padding: 16px 0 16px 0;
+}
+
+a {
+  font-family: var(--primaryFont);
+  font-weight: normal;
+  color: var(--textColor);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+h4 {
+  font-family: var(--secondaryFont);
+  font-weight: normal;
+  line-height: 1.4rem;
+  color: var(--textColor);
+  font-size: 16px;
+  padding: 0 0 12px 0;
+}
+
+body > * {
+  max-width: 1440px;
+}
+
+:root {
+
+/* Colours */
+  --background: #e8e5e5;
+  --primaryColor: #fb3f5c;
+  --primaryColor-dark: #a81e33;
+  --primaryColor-light: #ff8497;
+  --textColor: #50534f;
+  --text-light: #C4C4C4;
+  --clr-primary: #424242; 
+  --clr-dark: #1b1b1b;
+  --clr-light: #1f1f1f;
+
+  --ln: 1px solid #C4C4C4;
+  --main-margin: 4rem;
+  --mobile-margin: 2rem
+  --max-width: 1440px;
+
+  --primaryFont: Lato, Poppins, Helvetica, sans-serif;
+  --secondaryFont: Nunito, Arial, Helvetica, sans-serif;
+
+/* Animation */
+  --motion-1: 120ms;
+  --motion-2: 240ms;
+  --motion-3: 600ms;
+  --motion-4: 1200ms;
+}
+
+body, html {
+  width: 100%;
+  height: auto;
+  }
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 72px;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--background);
+  z-index: 100;
+}
+
+#WaiBrand {
+  position:absolute;
+  left: var(--main-margin);
+  top: 1rem;
+  height: 72px;
+  width: 15%;
+  min-width: 150px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#burger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-btn:hover, .nav-btn:hover[data-state="selected"] {
+color: var(--primaryColor);
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.nav-btn:selected, .nav-btn:selected[data-state="selected"] {
+color: var(--primaryColor);
+transform: scale(1.1);
+cursor: pointer;
+}
+
+/* HERO */
+
+#hero {
+  min-height: 560px;
+  height: 60vh;
+  padding: var(--main-margin);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: var(--background);
+}
+
+#hero .left {
+  grid-column: span 4;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+#hero .right {
+  grid-column: span 8;
+  transform: translateY(6rem);
+}
+
+#Hello {
+  font-family: Lato, Poppins, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--textColor);
+  font-size: 4.5rem;
+  letter-spacing: -2px;
+}
+
+.Highlight {
+  color: var(--primaryColor)
+}
+
+#introCopy {
+  font-family: var(--secondaryFont);
+  font-weight: normal;
+  line-height: 1.75rem;
+  color: var(--textColor);
+  font-size: 18px;
+}
+
+.primary-button {
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border-style: none;
+  cursor: pointer;
+  transition: var(--motion-2);
+}
+
+button:hover {
+  background-color: var(--primaryColor-dark);
+}
+
+button:active {
+  background-color: var(--primaryColor-light);
+  transition: var(--motion-1);
+}
+
+#hero-img {
+  background-image: url('../images/ABC_Hero_mockup.png');
+  width: 140%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+
+/* Portfolio Section */
+
+.section-header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  padding: var(--main-margin);
+}
+
+.section-label {
+  padding-left: 1rem;
+  border-left-style: solid;
+  border-width: 0.3rem;
+  border-color: var(--primaryColor);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  padding: var(--main-margin);
+}
