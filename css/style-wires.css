@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/*---- dev branch ----------*/
+
 h1 {
   font-family: var(--primaryFont);
   color: var(--textColor);
@@ -52,7 +54,7 @@ body > * {
 
 /* Colours */
   --background: #e8e5e5;
-  --primaryColor: #fb3f5c;
+  --primaryColor: blue;
   --primaryColor-dark: #a81e33;
   --primaryColor-light: #ff8497;
   --textColor: #50534f;
